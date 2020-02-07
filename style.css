@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+.main {
+  background-color: rgb(221, 212, 212);
+}
+
+/*Title section*/
+.title {
+  background-color: black;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.title h1 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  letter-spacing: 4px;
+}
+.title p:nth-child(2) {
+  font-family: "indie flower";
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-bottom: 0.5em;
+}
+.title p:nth-child(3) {
+  text-align: center;
+}
+/*Section 1/2/3/4*/
+.section1,
+.section2,
+.section3,
+.section4,
+.main-img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 1em 1em;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+h3 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+p {
+  text-align: justify;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-indent: 1em;
+  padding-bottom: 1em;
+}
+
+p::first-letter {
+  font-size: 200%;
+  color: #8a2be2;
+}
+
+/*section 3 / ul */
+
+#grid > div > ul {
+  display: inline-block;
+}
+#grid > div > ul,
+li {
+  text-align: justify;
+}
+
+/* media with no picture min 380 px width*/
+@media (max-width: 380px) {
+  .main-img {
+    display: none;
+  }
+}
+/*media with picture above 380 px width*/
+@media (min-width: 450px) {
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    width: 900px;
+    margin: auto;
+  }
+}
+#grid > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.section4 {
+  grid-column: 1 / 3;
+}
