@@ -3,8 +3,8 @@
   padding: 0px;
   text-align: center;
 }
-.body {
-  background-color: rgb(221, 212, 212);
+body {
+  background-color: rgba(238, 243, 189, 0.472);
 }
 
 /*Title section*/
@@ -30,7 +30,7 @@
 .title p:nth-child(3) {
   text-align: center;
 }
-/*Section 1/2/3/4*/
+/*Section 1/2/3/4/5*/
 .section1,
 .section2,
 .section3,
@@ -39,6 +39,12 @@
 .main-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 1em 1em;
+  background-color: rgba(171, 179, 108, 0.472);
+  transition: 0.3s;
+  border-radius: 30px;
+}
+#grid:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 .section1,
 .section2,
@@ -84,7 +90,7 @@ li {
   }
 }
 /*media with picture above 380 px width*/
-@media (min-width: 450px) {
+@media (min-width: 900px) {
   .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,4 +118,5 @@ li {
 .section5 p {
   font-family: "indie flower";
   font-size: large;
+  text-align: center;
 }
